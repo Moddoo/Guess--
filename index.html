@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Guess Game</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style.css">
+    <link href="https://fonts.googleapis.com/css?family=New+Rocker&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="row trial">
+            <h2 class="text-center display-4  col-12 mx-auto mb-5" id="title">Guess?!</h2>
+            <h4 class="text-center col-12 mb-5" id="trials"></h4>
+        </div>
+        <div class="row justify-content-center mb-5" id="inputs">
+            <input type="text" class=" put border-0 m-0" maxlength="" id="p1" value="_ _ _ _ _" readonly>
+            <!-- <input type="text" class=" put border-0 m-0" maxlength="1" id="p2" readonly>
+            <input type="text" class=" put border-0 m-0" maxlength="1" id="p3" readonly>
+            <input type="text" class=" put border-0 m-0" maxlength="1" id="p4" readonly>
+            <input type="text" class=" put border-0 m-0" maxlength="1" id="p5" readonly> -->
+        </div>
+        <div class="text-center row m-0">
+            <input type="text" class="mx-auto" maxlength="1" id="put" value="">
+        </div>
+        <div class="row justify-content-around p-0 m-0 flex-column flex-md-row mx-auto">
+            <button class="col-6 mx-auto col-md-2 m-2 btn btn-lg bg-success shadow text-white" id="hint">Hint</button>
+            <button class="col-6 mx-auto col-md-2 m-2 btn btn-lg bg-info shadow text-white" id="next">Next</button>
+        </div>
+    </div>
+
+    <script src="assets/main.js"></script>
+</body>
+</html>

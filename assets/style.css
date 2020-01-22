@@ -1,0 +1,95 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+body{
+    max-width: 100%; max-height: 100vh;
+}
+
+body::after{
+    content: "";
+    position: absolute;
+    background-image: url(https://images.unsplash.com/photo-1578501896993-9ae94e905e16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
+    background-repeat: no-repeat;
+    /* filter: invert(); */
+    background-size: 100% 200vh;
+    background-position: center;
+    opacity: 1;
+    top:0;bottom:0;left:0;right:0;
+    background-origin: initial;
+    max-height: 100vh;
+    z-index: -1;
+}
+
+.container{
+    position: relative;
+    min-height: 65vh;
+    opacity: 0.99;
+    z-index: 1;
+    max-width: 55vw;
+    background-color: khaki;
+    margin-top: 10vh;
+    padding:0;
+}
+
+#title{
+  font-family: 'New Rocker', cursive; 
+  font-weight: 900;
+  color: rgb(145, 79, 79);
+  padding: 10px;
+  font-size: 40px;
+}
+
+#title::after{
+    content: "";
+    position: absolute;
+    background-image: linear-gradient(red, yellow, blue);
+    opacity: 1;
+    filter: sepia(100);
+    top:0;bottom:0;left:0;right:0;
+    max-height: 90px;
+    z-index: -1;
+}
+
+.trial{
+    position: relative;
+    margin: 0 ;
+    color: black;
+}
+
+#inputs{
+    position: relative;
+    /* top: 25vh; */
+    background-color: rgba(255, 99, 71, 0.322);
+    max-width: 400px;
+    margin: 0 auto;
+    flex-wrap: nowrap;
+}
+
+#put{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 10px solid rgb(255, 255, 0) !important;
+    outline: none;
+    max-width: 30px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.431);
+    /* padding: 0; margin: 5px !important; */
+}
+
+.put{
+    position: relative;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 10px solid rgb(255, 255, 0) !important;
+    outline: none;
+    max-width: 200px;
+    font-size: 40px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.431);
+    /* padding: 0; margin: 5px !important; */
+} 
