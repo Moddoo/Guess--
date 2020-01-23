@@ -5,6 +5,7 @@ let hint   = document.getElementById("hint");
 let next   = document.getElementById("next");
 let put    = document.getElementById("put");
 
+
 let app = {
     
     words:    [
@@ -31,18 +32,21 @@ let app = {
     index:    0,
     
     trial:    10,
+
+    
+
     
     load:     function() {
+        
         if(app.words[app.index].w.indexOf(put.value.trim().toUpperCase()) !== -1 && put.value.trim()) {
             y = one.value.split(" ");
             z = app.words[app.index].w.split("");
-            for(i=0; i<z.length; i++){
-                if(z[i] == put.value.trim().toUpperCase()) {
+
+            for(i=0; i<z.length; i++) {
+                 if(z[i] === put.value.trim().toUpperCase()) {
                     y[i] = z[i];
-                    console.log(z);
-                }
-                
-            }
+                }      
+            };
             
             x = y.join(" ");
             one.value = x;
@@ -53,11 +57,22 @@ let app = {
             trials.textContent = "Trials: " + app.trial;
         }
         
-        put.value = "";
+        // put.value = "";
         
     } 
     
 }
+// one.value = "";
+// for(i=0; i<app.words[app.index].w.length; i++) {
+//     one.value += "_ "
+// }
+function load() {
+    one.value = "";
+    for(i=0; i<app.words[app.index].w.length; i++) {
+        one.value += "_ "
+    }
+}
+window.onload = load;
 put.addEventListener("input", app.load);
 trials.textContent = "Trials: " + app.trial;
 // app.load();
